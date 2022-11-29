@@ -1,2 +1,2 @@
-# news-homepage-project
-Project from frontend mentor
+### news-homepage-project
+### Project from frontend mentor
