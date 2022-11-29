@@ -20,6 +20,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  position: relative;
+  overflow-x: hidden;
   font-family: "Inter", sans-serif;
   margin-bottom: 30rem;
 }
@@ -58,6 +60,9 @@ nav {
   align-items: center;
   cursor: pointer;
 }
+.nav-links {
+  display: flex;
+}
 .nav-links a {
   text-decoration: none;
   color: var(--darkgreyish-blue);
@@ -66,6 +71,18 @@ nav {
 }
 .nav-links a:hover {
   color: var(--soft-orange);
+}
+/* hamburger and toggle */
+.hamburger,
+.hamburger-x {
+  display: none;
+  cursor: pointer;
+}
+.hamburger-open {
+  font-size: 3rem;
+}
+.hamburger-close {
+  font-size: 5rem;
 }
 /* HERO SECTION STYLING */
 main {
@@ -184,6 +201,34 @@ main {
   html {
     font-size: 62.5%;
   }
+  /* NAVS AND TOGGLES */
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    flex-direction: column;
+    background-color: var(--off-white);
+    gap: 3rem;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    width: 80%;
+    z-index: 100;
+    transition: all 0.8s ease-in-out;
+  }
+  .nav-links a {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+  .hamburger-x {
+    display: block;
+    padding: 1rem 0;
+    margin-left: 30rem;
+  }
+
+  /*  */
+  /*  */
   .hero-container {
     grid-template-columns: 1fr;
   }
