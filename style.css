@@ -1,5 +1,5 @@
 /* GENERAL STYLES */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 :root {
   --soft-orange: hsl(35, 77%, 62%);
   --soft-red: hsl(5, 85%, 63%);
@@ -29,6 +29,15 @@ img {
   max-width: 80%;
   margin: 0 auto;
 }
+.btn {
+  display: inline-block;
+  background-color: var(--soft-red);
+  text-decoration: none;
+  color: var(--off-white);
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+}
 /* nav stylings */
 nav {
   max-width: 80%;
@@ -52,4 +61,31 @@ nav {
 }
 .nav-links a:hover {
   color: var(--soft-orange);
+}
+/* HERO SECTION STYLING */
+.hero-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+}
+.hero-context-row {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  gap: 6rem;
+}
+.hero-first-col-h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--verydarkgreyish-blue);
+}
+.hero-first-paragraph {
+  font-size: 1.6rem;
+  color: var(--darkgreyish-blue);
+  margin-bottom: 3rem;
 }
