@@ -25,6 +25,10 @@ body {
 img {
   width: 100%;
 }
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
 /* nav stylings */
 nav {
   max-width: 80%;
