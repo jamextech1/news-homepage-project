@@ -224,7 +224,10 @@ main {
   .hamburger-x {
     display: block;
     padding: 1rem 0;
-    margin-left: 30rem;
+    margin-left: auto;
+  }
+  .hamburger-close {
+    margin-right: 2rem;
   }
 
   /*  */
