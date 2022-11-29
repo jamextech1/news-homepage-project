@@ -1,4 +1,5 @@
 /* GENERAL STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 :root {
   --soft-orange: hsl(35, 77%, 62%);
   --soft-red: hsl(5, 85%, 63%);
@@ -13,4 +14,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+img {
+  width: 100%;
+}
+/* nav stylings */
+nav {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.nav-logo {
+  max-width: 5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--darkgreyish-blue);
+  font-size: 1.6rem;
+  padding: 0 1.2rem;
+}
+.nav-links a:hover {
+  color: var(--soft-orange);
 }
