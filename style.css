@@ -21,6 +21,7 @@ html {
 }
 body {
   font-family: "Inter", sans-serif;
+  margin-bottom: 30rem;
 }
 img {
   width: 100%;
@@ -68,7 +69,7 @@ nav {
 }
 /* HERO SECTION STYLING */
 main {
-  margin-bottom: 9.2rem;
+  margin-bottom: 6rem;
 }
 .hero-container {
   margin-top: 3rem;
@@ -124,3 +125,38 @@ main {
   margin: 2rem 0;
 }
 /* ARTICLE STYLES */
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.article-one {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.article-one:hover .article-h4 {
+  transition: all 0.2s ease;
+  color: var(--soft-red);
+}
+.article-img {
+  width: 9rem;
+}
+.article-h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--greyish-blue);
+  margin-bottom: 1.8rem;
+}
+.article-h4 {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: var(--verydarkgreyish-blue);
+  margin-bottom: 0.8rem;
+}
+.article-paragraph {
+  font-size: 1.4rem;
+  color: var(--darkgreyish-blue);
+}
