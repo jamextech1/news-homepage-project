@@ -160,3 +160,41 @@ main {
   font-size: 1.4rem;
   color: var(--darkgreyish-blue);
 }
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 48.2%;
+  }
+  .container,
+  nav {
+    max-width: 90%;
+  }
+  .hero-context-row {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 44%;
+  }
+  .hero-first-col-h1 {
+    font-size: 3.8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 62.5%;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+  .hero-context-row {
+    grid-template-columns: 1fr;
+  }
+
+  /*  */
+  .article-container {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    row-gap: 3rem;
+  }
+}
